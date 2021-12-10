@@ -11,10 +11,10 @@ public class cfdrs {
 
 	private String cfdrsName;
 	private String cfdrsStatus;
-//	private int originalFileSize; <-- possibly delete
 	private String fileOriginalFileSource;
 	private String fileDestination;
 
+	// Constructor
 	/**
 	 * @param cfdrsName
 	 * @param cfdrsStatus
@@ -27,6 +27,7 @@ public class cfdrs {
 		this.fileOriginalFileSource = fileOriginalFileSource;
 		this.fileDestination = fileDestination;
 	}
+	// End Constructor
 
 	public static void getZippedFileName() {
 		System.out.println("Getting zipped file...");

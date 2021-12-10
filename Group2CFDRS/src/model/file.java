@@ -15,6 +15,7 @@ public class file {
 	private boolean isCompressed;
 	private String filePath;
 
+	// Constructor
 	/**
 	 * @param fileName
 	 * @param fileSize
@@ -29,6 +30,8 @@ public class file {
 		this.setCompressed(isCompressed);
 		this.setFilePath(filePath);
 	}
+
+	// end Constructor
 
 	/**
 	 * @return the fileName

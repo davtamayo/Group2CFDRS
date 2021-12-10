@@ -10,9 +10,9 @@ public class fileRepo {
 	private int fileRepoCPU;
 	private int fileRepoMemory;
 	private int fileRepoStorage;
-//  private String Name; <--needs to be deleted from class
 	private String fileRepoPath;
 
+	// Constructor
 	/**
 	 * @param fileRepoName
 	 * @param fileRepoCPU
@@ -28,6 +28,8 @@ public class fileRepo {
 		this.setFileRepoStorage(fileRepoStorage);
 		this.setFileRepoPath(fileRepoPath);
 	}
+
+	// End Constructor
 
 	/**
 	 * @return the fileRepoName

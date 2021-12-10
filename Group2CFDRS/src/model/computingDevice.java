@@ -12,6 +12,7 @@ public class computingDevice {
 	private String fileName;
 	private String filePath;
 
+	// Constructor
 	/**
 	 * @param fileName
 	 * @param filePath
@@ -20,6 +21,8 @@ public class computingDevice {
 		this.setFileName(fileName);
 		this.setFilePath(filePath);
 	}
+
+	// end Constructor
 
 	/**
 	 * @return the fileName

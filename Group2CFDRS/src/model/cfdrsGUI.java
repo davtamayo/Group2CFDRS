@@ -12,6 +12,7 @@ public class cfdrsGUI {
 	private String destination;
 	private String userMessage;
 
+	// Constructor
 	/**
 	 * @param connectionStatus
 	 * @param destination
@@ -22,6 +23,7 @@ public class cfdrsGUI {
 		this.setDestination(destination);
 		this.setUserMessage(userMessage);
 	}
+	// End Constructor
 
 	/**
 	 * @return the connectionStatus
