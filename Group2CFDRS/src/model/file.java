@@ -37,6 +37,7 @@ public class file {
 	 * @return the fileName
 	 */
 	public String getFileName() {
+		// gets its own name
 		return fileName;
 	}
 
@@ -44,6 +45,7 @@ public class file {
 	 * @param fileName the fileName to set
 	 */
 	public void setFileName(String fileName) {
+		// sets its own name
 		this.fileName = fileName;
 	}
 
@@ -51,6 +53,7 @@ public class file {
 	 * @return the fileSize
 	 */
 	public float getFileSize() {
+		// gets its own size
 		return fileSize;
 	}
 
@@ -58,6 +61,7 @@ public class file {
 	 * @param fileSize the fileSize to set
 	 */
 	public void setFileSize(float fileSize) {
+		// sets its own size
 		this.fileSize = fileSize;
 	}
 
@@ -65,6 +69,7 @@ public class file {
 	 * @return the compressionType
 	 */
 	public String getCompressionType() {
+		// gets its compression type used
 		return compressionType;
 	}
 
@@ -72,6 +77,7 @@ public class file {
 	 * @param compressionType the compressionType to set
 	 */
 	public void setCompressionType(String compressionType) {
+		// sets compression mechanism
 		this.compressionType = compressionType;
 	}
 
@@ -79,6 +85,7 @@ public class file {
 	 * @return the isCompressed
 	 */
 	public boolean isCompressed() {
+		// sets where it is compressed or not
 		return isCompressed;
 	}
 
@@ -86,6 +93,7 @@ public class file {
 	 * @param isCompressed the isCompressed to set
 	 */
 	public void setCompressed(boolean isCompressed) {
+		// sets compressions
 		this.isCompressed = isCompressed;
 	}
 
@@ -93,6 +101,7 @@ public class file {
 	 * @return the filePath
 	 */
 	public String getFilePath() {
+		// knows where it is located
 		return filePath;
 	}
 
@@ -100,14 +109,17 @@ public class file {
 	 * @param filePath the filePath to set
 	 */
 	public void setFilePath(String filePath) {
+		// sets where it is, when moved
 		this.filePath = filePath;
 	}
 
-	public void openFile() {
+	public static void openFile() {
+		// opens its contents
 		System.out.println("File is open.");
 	}
 
-	public void closeFile() {
+	public static void closeFile() {
+		// closes its contents
 		System.out.println("File is closed.");
 	}
 

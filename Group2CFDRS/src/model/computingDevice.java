@@ -28,6 +28,7 @@ public class computingDevice {
 	 * @return the fileName
 	 */
 	public String getFileName() {
+		// gets the name of the file to be used.
 		return fileName;
 	}
 
@@ -35,6 +36,7 @@ public class computingDevice {
 	 * @param fileName the fileName to set
 	 */
 	public void setFileName(String fileName) {
+		// sets the name of the file, and can change it
 		this.fileName = fileName;
 	}
 
@@ -42,6 +44,7 @@ public class computingDevice {
 	 * @return the filePath
 	 */
 	public String getFilePath() {
+		// indicates where the file is located
 		return filePath;
 	}
 
@@ -49,6 +52,7 @@ public class computingDevice {
 	 * @param filePath the filePath to set
 	 */
 	public void setFilePath(String filePath) {
+		// sets the path location
 		this.filePath = filePath;
 	}
 
