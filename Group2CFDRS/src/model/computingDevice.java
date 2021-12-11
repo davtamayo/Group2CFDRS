@@ -3,6 +3,8 @@
  */
 package model;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author dftamayo
  *
@@ -58,24 +60,45 @@ public class computingDevice {
 
 	/**
 	 * @param args
+	 * @throws InterruptedException
 	 */
-	public void compressFile() {
+	public static void compressFile() throws InterruptedException {
 		// compresses file before submitting.
+		System.out.println("Compressing File.");
+		TimeUnit.SECONDS.sleep(3);
+		System.out.println("Compressing File..");
+		TimeUnit.SECONDS.sleep(3);
 		System.out.println("Compressing File...");
+		TimeUnit.SECONDS.sleep(3);
+
 	}
 
 	/**
 	 * @param args
+	 * @throws InterruptedException
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-
-		file MyFile = new file("Group2CDFRS.txt", 10, "None", false, "C:\\Documents\\CFDRS");
-		System.out.println("The file compression type is currently \"" + MyFile.getCompressionType() + "\".\n");
 
 		computingDevice MyComputer = new computingDevice("Group2CFRDS.txt", "C:\\Documents\\");
 		System.out.println("The file is " + MyComputer.getFileName() + " and is located at \""
 				+ MyComputer.getFilePath() + "\" folder.");
+
+		file MyFile = new file("Group2CDFRS.txt", 10, "None", false, "C:\\Documents\\CFDRS");
+		System.out.println("\nBelow are your file statistics: \n\n" + "**Filename:" + MyFile.getFileName() + ".\n"
+				+ "**Compression type: " + MyFile.getCompressionType() + ".\n" + "**File Size: " + MyFile.getFileSize()
+				+ " GB\n");
+
+		compressFile();
+
+		MyFile.setFileName("Group2CFDRS.zip");
+		MyFile.setCompressionType("zip");
+		MyFile.setFileSize(2);
+
+		System.out.println("\nYour file has been compressed. Here are the new file details: \n\n" + "**Filename:"
+				+ MyFile.getFileName() + ".\n" + "**Compression type: " + MyFile.getCompressionType() + ".\n"
+				+ "**File Size: " + MyFile.getFileSize() + " MB");
+
 	}
 
 }
