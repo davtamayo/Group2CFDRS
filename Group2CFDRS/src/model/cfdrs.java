@@ -108,4 +108,12 @@ public class cfdrs {
 		// deletes a file
 		System.out.println("Deleting file...");
 	}
+
+	/**
+	 * @param file returns fileServerStats
+	 */
+	public void pollStatics() {
+		// retrieves CPU, RAM, and Storage statistics from Server
+		System.out.println("Retrieving File Server statistics...");
+	}
 }

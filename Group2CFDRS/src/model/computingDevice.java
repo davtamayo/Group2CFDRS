@@ -59,6 +59,14 @@ public class computingDevice {
 	/**
 	 * @param args
 	 */
+	public void compressFile() {
+		// compresses file before submitting.
+		System.out.println("Compressing File...");
+	}
+
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
