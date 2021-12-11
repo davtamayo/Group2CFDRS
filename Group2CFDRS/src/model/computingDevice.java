@@ -122,7 +122,16 @@ public class computingDevice {
 		TimeUnit.SECONDS.sleep(3);
 		System.out.println("CPU: " + myFileRepo.getFileRepoCPU() + " vCPUs\n" + "RAM: " + myFileRepo.getFileRepoMemory()
 				+ " GB\n" + "Volume: " + myFileRepo.getFileRepoStorage() + " GB.\n");
+		myCFDRS.copyingFile();
 		myCFDRS.moveFile();
+		antimalwareScanner myScanner = new antimalwareScanner("Ready", 100);
+		System.out.println("\nAntimalware state: " + myScanner.getStatus() + ".\n");
+		myCFDRS.decompressFile();
+		myScanner.analyzeFile();
+		TimeUnit.SECONDS.sleep(2);
+		myScanner.executeFile();
+		myScanner.analyzeExecutable();
+		TimeUnit.SECONDS.sleep(2);
 
 	}
 
