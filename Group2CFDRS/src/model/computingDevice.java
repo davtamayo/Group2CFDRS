@@ -97,8 +97,16 @@ public class computingDevice {
 
 		System.out.println("\nYour file has been compressed. Here are the new file details: \n\n" + "**Filename:"
 				+ MyFile.getFileName() + ".\n" + "**Compression type: " + MyFile.getCompressionType() + ".\n"
-				+ "**File Size: " + MyFile.getFileSize() + " MB");
+				+ "**File Size: " + MyFile.getFileSize() + " MB\n\nYour file is located on: " + MyComputer.getFilePath()
+				+ MyFile.getFileName());
 
+		TimeUnit.SECONDS.sleep(3);
+		System.out.println("\nUploading file...");
+
+		cfdrsGUI myGUI = new cfdrsGUI("Connectec", "\\\\10.1.1.100\\UploadedFiles\\", "Processing your request...");
+		System.out.println(myGUI.getUserMessage());
+		TimeUnit.SECONDS.sleep(3);
+		System.out.println("\nFile uploaded!");
 	}
 
 }
