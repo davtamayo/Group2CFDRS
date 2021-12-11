@@ -32,7 +32,7 @@ public class cfdrs {
 	/**
 	 * @param returns file name
 	 */
-	public static void getZippedFileName() {
+	public void getZippedFileName() {
 		// gets name of zipped file
 		System.out.println("Getting zipped file...");
 	}
@@ -40,7 +40,7 @@ public class cfdrs {
 	/**
 	 * @param returns the decompressed zipped file(s)
 	 */
-	public static void decompressFile() {
+	public void decompressFile() {
 		// decompresses files
 		System.out.println("Decompressing zipped file...");
 	}
@@ -48,15 +48,15 @@ public class cfdrs {
 	/**
 	 * @param creates the virtual environment
 	 */
-	public static void createVirtualEnvironment() {
+	public void createVirtualEnvironment() {
 		// creates a virtual environment for detonating files
-		System.out.println("Creating virtual environment...");
+		System.out.println("\nCreating virtual environment with the following stats: \n");
 	}
 
 	/**
 	 * @param destroys the virtual environment
 	 */
-	public static void destroyVirtualEnvironment() {
+	public void destroyVirtualEnvironment() {
 		// destroys a virtualized environment
 		System.out.println("Destroying virtual environment...");
 	}
@@ -64,7 +64,7 @@ public class cfdrs {
 	/**
 	 * @param return existence of malicious content
 	 */
-	public static void checkForMaliciousContent() {
+	public void checkForMaliciousContent() {
 		// checks if files are malicious
 		System.out.println("Checking files for malicious content...");
 	}
@@ -72,7 +72,7 @@ public class cfdrs {
 	/**
 	 * @param returns repackaged file
 	 */
-	public static void repackageFile() {
+	public void repackageFile() {
 		// re-zips file
 		System.out.println("Rezipping file...");
 	}
@@ -80,7 +80,7 @@ public class cfdrs {
 	/**
 	 * @param re-routes file
 	 */
-	public static void rerouteFile() {
+	public void rerouteFile() {
 		// reroutes files
 		System.out.println("Rerouting zipped file...");
 	}
@@ -88,7 +88,7 @@ public class cfdrs {
 	/**
 	 * @param moves files locally
 	 */
-	public static void moveFile() {
+	public void moveFile() {
 		// moves file locally
 		System.out.println("Moving file...");
 	}
@@ -96,7 +96,7 @@ public class cfdrs {
 	/**
 	 * @param file copy
 	 */
-	public static void copyingFile() {
+	public void copyingFile() {
 		// creates a copy of the file
 		System.out.println("Getting zipped file...");
 	}
@@ -104,7 +104,7 @@ public class cfdrs {
 	/**
 	 * @param file deletion
 	 */
-	public static void deleteFile() {
+	public void deleteFile() {
 		// deletes a file
 		System.out.println("Deleting file...");
 	}

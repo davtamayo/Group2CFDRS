@@ -65,9 +65,9 @@ public class computingDevice {
 	public static void compressFile() throws InterruptedException {
 		// compresses file before submitting.
 		System.out.println("Compressing File.");
-		TimeUnit.SECONDS.sleep(3);
+		TimeUnit.SECONDS.sleep(1);
 		System.out.println("Compressing File..");
-		TimeUnit.SECONDS.sleep(2);
+		TimeUnit.SECONDS.sleep(1);
 		System.out.println("Compressing File...");
 		TimeUnit.SECONDS.sleep(1);
 
@@ -112,7 +112,18 @@ public class computingDevice {
 
 		myGUI.setUserMessage("\nUser Message: Please wait while your file is being scanned.");
 		System.out.println(myGUI.getUserMessage());
-		System.out.println("Checking CFDRS status: " + myGUI.getConnectionStatus());
+		System.out.println("Checking CFDRS status: " + myGUI.getConnectionStatus() + "\n");
+		myGUI.sendFileTo();
+		cfdrs myCFDRS = new cfdrs("Enterprise CFDRS", "Online", myGUI.getDestination(), "C:\\ReadyForAnalysis\"");
+		myCFDRS.getZippedFileName();
+		myCFDRS.pollStatics();
+		fileRepo myFileRepo = new fileRepo("FileServer", 32, 128, 500, myGUI.getDestination());
+		myCFDRS.createVirtualEnvironment();
+		TimeUnit.SECONDS.sleep(3);
+		System.out.println("CPU: " + myFileRepo.getFileRepoCPU() + " vCPUs\n" + "RAM: " + myFileRepo.getFileRepoMemory()
+				+ " GB\n" + "Volume: " + myFileRepo.getFileRepoStorage() + " GB.\n");
+		myCFDRS.moveFile();
+
 	}
 
 }
