@@ -100,13 +100,18 @@ public class computingDevice {
 				+ "**File Size: " + MyFile.getFileSize() + " MB\n\nYour file is located on: " + MyComputer.getFilePath()
 				+ MyFile.getFileName());
 
+		TimeUnit.SECONDS.sleep(2);
+		System.out.println("\nUser Message: Uploading file to File Server:");
+		cfdrsGUI myGUI = new cfdrsGUI("Connected", "\\\\10.1.1.100\\UploadedFiles\\", "User Message: File received!");
+		myGUI.processRequest();
 		TimeUnit.SECONDS.sleep(3);
-		System.out.println("\nUploading file...");
-
-		cfdrsGUI myGUI = new cfdrsGUI("Connectec", "\\\\10.1.1.100\\UploadedFiles\\", "Processing your request...");
 		System.out.println(myGUI.getUserMessage());
 		TimeUnit.SECONDS.sleep(3);
-		System.out.println("\nFile uploaded!");
+		System.out.println("\n\nFile requesting to be moved to file server location: " + myGUI.getDestination());
+		TimeUnit.SECONDS.sleep(3);
+
+		myGUI.setUserMessage("\nUser Message: Please wait while your file is being scanned.");
+		System.out.println(myGUI.getUserMessage());
 	}
 
 }

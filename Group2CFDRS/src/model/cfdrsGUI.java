@@ -86,7 +86,7 @@ public class cfdrsGUI {
 	 */
 	public void processRequest() {
 		// processing the request to upload the file
-		System.out.println("Processing File.");
+		System.out.println("Processing File, please wait.\n");
 	}
 
 	/**
