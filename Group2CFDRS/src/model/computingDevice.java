@@ -56,4 +56,18 @@ public class computingDevice {
 		this.filePath = filePath;
 	}
 
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		file MyFile = new file("Group2CDFRS.txt", 10, "None", false, "C:\\Documents\\CFDRS");
+		System.out.println("The file compression type is currently \"" + MyFile.getCompressionType() + "\".\n");
+
+		computingDevice MyComputer = new computingDevice("Group2CFRDS.txt", "C:\\Documents\\");
+		System.out.println("The file is " + MyComputer.getFileName() + " and is located at \""
+				+ MyComputer.getFilePath() + "\" folder.");
+	}
+
 }
