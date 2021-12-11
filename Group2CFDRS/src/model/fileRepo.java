@@ -35,6 +35,7 @@ public class fileRepo {
 	 * @return the fileRepoName
 	 */
 	public String getFileRepoName() {
+		// gets name of the file repository or destination
 		return fileRepoName;
 	}
 
@@ -42,6 +43,7 @@ public class fileRepo {
 	 * @param fileRepoName the fileRepoName to set
 	 */
 	public void setFileRepoName(String fileRepoName) {
+		// sets the name of the file repository
 		this.fileRepoName = fileRepoName;
 	}
 
@@ -49,6 +51,7 @@ public class fileRepo {
 	 * @return the fileRepoCPU
 	 */
 	public int getFileRepoCPU() {
+		// gets the file repository CPU statistics
 		return fileRepoCPU;
 	}
 
@@ -56,6 +59,7 @@ public class fileRepo {
 	 * @param fileRepoCPU the fileRepoCPU to set
 	 */
 	public void setFileRepoCPU(int fileRepoCPU) {
+		// sets the file repository CPU statistics
 		this.fileRepoCPU = fileRepoCPU;
 	}
 
@@ -63,6 +67,7 @@ public class fileRepo {
 	 * @return the fileRepoMemory
 	 */
 	public int getFileRepoMemory() {
+		// gets the file repository Memory capacity
 		return fileRepoMemory;
 	}
 
@@ -70,6 +75,8 @@ public class fileRepo {
 	 * @param fileRepoMemory the fileRepoMemory to set
 	 */
 	public void setFileRepoMemory(int fileRepoMemory) {
+		// sets the file repository Memory capacity
+
 		this.fileRepoMemory = fileRepoMemory;
 	}
 
@@ -77,6 +84,8 @@ public class fileRepo {
 	 * @return the fileRepoStorage
 	 */
 	public int getFileRepoStorage() {
+		// gets the file repository storage capacity
+
 		return fileRepoStorage;
 	}
 
@@ -84,6 +93,8 @@ public class fileRepo {
 	 * @param fileRepoStorage the fileRepoStorage to set
 	 */
 	public void setFileRepoStorage(int fileRepoStorage) {
+		// sets the file repository storage capacity
+
 		this.fileRepoStorage = fileRepoStorage;
 	}
 

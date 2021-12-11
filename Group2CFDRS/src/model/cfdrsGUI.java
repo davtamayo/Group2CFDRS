@@ -29,6 +29,7 @@ public class cfdrsGUI {
 	 * @return the connectionStatus
 	 */
 	public String getConnectionStatus() {
+		// connection status of the CFDRS system
 		return connectionStatus;
 	}
 
@@ -36,6 +37,7 @@ public class cfdrsGUI {
 	 * @param connectionStatus the connectionStatus to set
 	 */
 	public void setConnectionStatus(String connectionStatus) {
+		// sets connection status of the CFDRS
 		this.connectionStatus = connectionStatus;
 	}
 
@@ -43,6 +45,7 @@ public class cfdrsGUI {
 	 * @return the destination
 	 */
 	public String getDestination() {
+		// gets the file destination
 		return destination;
 	}
 
@@ -50,6 +53,7 @@ public class cfdrsGUI {
 	 * @param destination the destination to set
 	 */
 	public void setDestination(String destination) {
+		// sets the file destination
 		this.destination = destination;
 	}
 
@@ -57,6 +61,7 @@ public class cfdrsGUI {
 	 * @return the userMessage
 	 */
 	public String getUserMessage() {
+		// gets a user message
 		return userMessage;
 	}
 
@@ -64,18 +69,31 @@ public class cfdrsGUI {
 	 * @param userMessage the userMessage to set
 	 */
 	public void setUserMessage(String userMessage) {
+		// sets the user message
 		this.userMessage = userMessage;
 	}
 
-	public void getCompressedType() {
+	/**
+	 * @param gets compression type
+	 */
+	public static void getCompressedType() {
+		// gets the compression type of the file
 		System.out.println("File type is zip.");
 	}
 
+	/**
+	 * @param process a file submission
+	 */
 	public void processRequest() {
+		// processing the request to upload the file
 		System.out.println("Processing File.");
 	}
 
+	/**
+	 * @param sends file for uploading
+	 */
 	public void sendFileTo() {
+		// sends file for analysis.
 		System.out.println("Submitting File for analysis.");
 	}
 
