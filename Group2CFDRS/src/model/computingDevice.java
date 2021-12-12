@@ -132,6 +132,7 @@ public class computingDevice {
 		myScanner.executeFile();
 		myScanner.analyzeExecutable();
 		TimeUnit.SECONDS.sleep(2);
+		myScanner.createReport();
 
 	}
 
