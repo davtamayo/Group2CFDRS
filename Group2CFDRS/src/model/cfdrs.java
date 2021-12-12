@@ -75,6 +75,7 @@ public class cfdrs {
 	public void repackageFile() {
 		// re-zips file
 		System.out.println("Rezipping file...");
+		System.out.println("Comparing zip file to original unzipped...");
 	}
 
 	/**
@@ -99,6 +100,7 @@ public class cfdrs {
 	public void copyingFile() {
 		// creates a copy of the file
 		System.out.println("Getting zipped file...");
+		System.out.println("Copying file locally...");
 	}
 
 	/**

@@ -85,7 +85,7 @@ public class computingDevice {
 				+ MyComputer.getFilePath() + "\" folder.");
 
 		file MyFile = new file("Group2CDFRS.txt", 10, "None", false, "C:\\Documents\\CFDRS");
-		System.out.println("\nBelow are your file statistics: \n\n" + "**Filename:" + MyFile.getFileName() + ".\n"
+		System.out.println("\nBelow are your file statistics: \n\n" + "**Filename: " + MyFile.getFileName() + ".\n"
 				+ "**Compression type: " + MyFile.getCompressionType() + ".\n" + "**File Size: " + MyFile.getFileSize()
 				+ " GB\n");
 
@@ -95,7 +95,7 @@ public class computingDevice {
 		MyFile.setCompressionType("zip");
 		MyFile.setFileSize(2);
 
-		System.out.println("\nYour file has been compressed. Here are the new file details: \n\n" + "**Filename:"
+		System.out.println("\nYour file has been compressed. Here are the new file details: \n\n" + "**Filename: "
 				+ MyFile.getFileName() + ".\n" + "**Compression type: " + MyFile.getCompressionType() + ".\n"
 				+ "**File Size: " + MyFile.getFileSize() + " MB\n\nYour file is located on: " + MyComputer.getFilePath()
 				+ MyFile.getFileName());
@@ -125,15 +125,34 @@ public class computingDevice {
 		myCFDRS.copyingFile();
 		myCFDRS.moveFile();
 		antimalwareScanner myScanner = new antimalwareScanner("Ready", 100);
+		TimeUnit.SECONDS.sleep(1);
 		System.out.println("\nAntimalware state: " + myScanner.getStatus() + ".\n");
+		TimeUnit.SECONDS.sleep(1);
 		myCFDRS.decompressFile();
 		myScanner.analyzeFile();
 		TimeUnit.SECONDS.sleep(2);
 		myScanner.executeFile();
+		TimeUnit.SECONDS.sleep(2);
 		myScanner.analyzeExecutable();
 		TimeUnit.SECONDS.sleep(2);
 		myScanner.createReport();
-
+		myScanner.sendReport();
+		myScanner.rerouteCompressedFile();
+		TimeUnit.SECONDS.sleep(1);
+		myCFDRS.repackageFile();
+		TimeUnit.SECONDS.sleep(1);
+		System.out.println("\nAll checks clear");
+		myCFDRS.destroyVirtualEnvironment();
+		TimeUnit.SECONDS.sleep(2);
+		myCFDRS.deleteFile();
+		TimeUnit.SECONDS.sleep(1);
+		myCFDRS.rerouteFile();
+		TimeUnit.SECONDS.sleep(1);
+		System.out.println(
+				"\nZipped file moved to: " + myGUI.getDestination() + MyFile.getFileName() + ". Successful transfer.");
+		TimeUnit.SECONDS.sleep(2);
+		myGUI.setUserMessage("File uploaded Successfully. You may upload another zip file.");
+		System.out.println("\nUser Message: " + myGUI.getUserMessage());
 	}
 
 }
